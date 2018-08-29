@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Postcode API</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.30/css/uikit.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<section id="google-maps">
+    <div id="map"></div>
+</section>
+
+<section>
+    <p id="postcodes"></p>
+</section>
+
+<section id="main" class="uk-section uk-section-default uk-section-large">
+    <div class="uk-container">
+
+        <div uk-grid>
+            <div>
+                <h1>Postcode API</h1>
+            </div>
+        </div>
+
+        <div uk-grid>
+
+            <div class="uk-width-1-2@m">
+                <div class="uk-panel">
+
+                    <form class="uk-form-stacked">
+
+                        <div class="uk-margin">
+                            <label class="uk-form-label" for="postcode">Postcode</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" id="postcode" type="text" placeholder="1234AB" autocomplete="off" tabindex="1">
+                            </div>
+                        </div>
+
+                        <div class="uk-margin">
+                            <label class="uk-form-label" for="huisnummer">Huisnummer</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" id="huisnummer" type="text" placeholder="1" autocomplete="off" tabindex="2">
+                            </div>
+                        </div>
+
+                    </form>
+
+                    <button id="submit-btn" class="uk-button uk-button-primary">Zoeken</button>
+
+                </div>
+            </div>
+
+            <div class="uk-width-1-2@m">
+                <div class="uk-panel">
+
+                    <form class="uk-form-stacked">
+
+                        <div class="uk-margin">
+                            <label class="uk-form-label" for="straat">Straat</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" id="straat" type="text" placeholder="" autocomplete="off" tabindex="3">
+                            </div>
+                        </div>
+
+                        <div class="uk-margin">
+                            <label class="uk-form-label" for="plaats">Plaats</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" id="plaats" type="text" placeholder="" autocomplete="off" tabindex="4">
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxA6YkTxREcGSZaQCcqd-68ILThpO5nUs&callback=initMap"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.30/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.30/js/uikit-icons.min.js"></script>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
