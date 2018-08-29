@@ -25,7 +25,11 @@ function init() {
         console.log(postcodeArray[i]);
         document.getElementById('postcodes').innerHTML += postcodeArray[i] + '<br>';
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> c050651a2132fb62f2351191df576971e2d57925
     initMap(4.899431, 52.379189);
 
     let postcodeField = document.getElementById('postcode');
