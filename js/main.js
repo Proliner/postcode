@@ -3,7 +3,7 @@ window.addEventListener('load', init);
 
 let postcode;
 let number;
-
+//define lng and lat to 0
 let lng = 0;
 let lat = 0;
 
